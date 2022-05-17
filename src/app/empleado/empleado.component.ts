@@ -4,10 +4,19 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-empleado',
   templateUrl: './empleado.component.html',
   styleUrls: ['./empleado.component.css']
+  //template:"<p>Aca va un empleado</p>",
+  //styles: ["p {background-color: red;}"]
 })
 export class EmpleadoComponent implements OnInit {
-
+  nombre = 'juan';
+  apellido = 'Valdez'
+  private edad = 25;
+  empresa = 'pildora informaticas';
   constructor() { }
+
+  getEdad(){
+    return this.edad;
+  }
 
   ngOnInit(): void {
   }
