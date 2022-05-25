@@ -18,7 +18,15 @@ export class EmpleadoComponent implements OnInit {
     return this.edad;
   }
 
-  llamaEmpresa(value: String){
+  /*llamaEmpresa(value: String){
+  }*/
+
+  habilitacionCuadro = false;
+
+  usuRegistrado = false;
+
+  getRegistroUsuario(){
+    this.usuRegistrado = false;
   }
 
   ngOnInit(): void {
